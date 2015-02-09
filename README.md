@@ -21,3 +21,6 @@ zerAkguly omutk satiri erastgel metin iuretic ve deenco ciedi mauygula
 * Commit your changes: git commit -m 'Add some akgul text'
 * Push to the branch: git push origin my-new-akgul-metin
 * Submit a pull request.
+
+# Teşekkürler
+Onur Güzel
