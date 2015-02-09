@@ -49,19 +49,22 @@ class Akgulyzer(object):
         :param text:
         :return:
         """
-        ret = ""
-        for t in text.split():
-            ret += self.__rotate(t, randint(0, len(t))) + " "
-        print ret
+        words = []
+        for word in text.split():
+            if randint(0, 10) < 2 and len(word) > 3:
+                # %20 ihtimalle karakterleri hatali sirala
+                word = self.__swap(word, randint(1, len(word)-2))
+            words.append(word)
+        print " ".join(words)
 
-    def __rotate(self, strg, n):
+    def __swap(self, strg, n):
         """
-        Verilen parametreye gore string rotasyonu.
+        Verilen parametreye gore karakter degisimi.
         :param strg:
         :param n:
         :return:
         """
-        return strg[n:] + strg[:n]
+        return strg[:n] + strg[n+1] + strg[n] + strg[n+2:]
 
 if __name__ == "__main__":
     parser = ArgumentParser(description="Mustafa Akgül'un askerleriyiz..!")
