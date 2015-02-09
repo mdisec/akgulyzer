@@ -13,7 +13,7 @@ zerAkguly omutk satiri erastgel metin iuretic ve deenco ciedi mauygula
 # Nasıl katkı sağlarım ?
 1. Mail kutunuzu açın.
 2. from:akgulxx@gmail.com kriteri ile arama yapın.
-3. Sayın üstad Akgül hocadan aldığınız mailleri okuyup; low, medium, hardcore seçeneklerinden hangisine uygun olduğuna karar verin.
+3. Sayın üstad Akgül hocadan aldığınız mailleri okuyup; low, medium, hardcore seçeneklerinden hangisine uygun olduğuna karar verin. ( Herhangi bir gizli bilgi ifşasına sebeb olmamaya özen gösteriniz. )
 4. Ardından aşağıdaki adımları izleyerek PR gönderin.
 
 * Fork it!
