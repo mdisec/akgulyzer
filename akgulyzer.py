@@ -50,10 +50,18 @@ class Akgulyzer(object):
         :return:
         """
         words = []
+        char_from_previous = None
         for word in text.split():
             if randint(0, 10) < 2 and len(word) > 3:
                 # %20 ihtimalle karakterleri hatali sirala
                 word = self.__swap(word, randint(1, len(word)-2))
+            if char_from_previous:
+                # Eger bir onceki kelimenin son harfi kaldiysa en basa ekle
+                word = char_from_previous + word
+                char_from_previous = None
+            elif randint(0, 10) < 2:
+                char_from_previous = word[-1]
+                word = word[:-1]
             words.append(word)
         print " ".join(words)
 
